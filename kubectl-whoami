@@ -1,0 +1,4 @@
+#!/bin/bash
+
+kubectl config view --template='{{ range .contexts }}{{ if eq .name "'$(kubectl config current-context)'" }}Current user: {{ .context.user }}{{ end }}{{ end }}'
+echo ""
