@@ -1,0 +1,2 @@
+# kubectl-whoami
+Kubectl plugin
